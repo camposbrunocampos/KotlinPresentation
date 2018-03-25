@@ -3,7 +3,6 @@ package skills.me.show.crazykotlin
 import android.os.Bundle
 import android.os.PersistableBundle
 import android.support.v7.app.AppCompatActivity
-import skills.me.show.crazykotlin.models.AlphaBakery
 import skills.me.show.crazykotlin.models.AlphaBakeryKotlin
 
 /**
@@ -27,11 +26,8 @@ class MainActivity: AppCompatActivity() {
      */
 
     fun playground() {
-        val banana = 0
-        banana = 0 + 1
 
-        var bananaMutable = 0
-        bananaMutable = bananaMutable + 1
+
     }
 
 
@@ -54,7 +50,7 @@ class MainActivity: AppCompatActivity() {
 
     fun automaticCast(obj: Any) {
         if (obj is String) {
-            System.out.print(obj.equals("blabla"))
+            System.out.print(obj.length)
         }
     }
 
@@ -66,12 +62,27 @@ class MainActivity: AppCompatActivity() {
     }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     /**
      * 3) Switch -> When
      */
 
 
-    fun usingWhen(number: Int) {
+    fun usingWhen(number: String) {
+
         when(number) {
             1 -> System.out.print("um")
             2 -> System.out.print("dois")
@@ -84,11 +95,20 @@ class MainActivity: AppCompatActivity() {
 
 
 
+
+
+
+
+
+
+
+
+
     /**
      * 3) Models use
      */
     fun usingModels() {
         val alphaBakery = AlphaBakeryKotlin(false, false, "panificadora")
-        alphaBakery.hotBread = false;
+        alphaBakery.hotBread = true
     }
 }

@@ -26,7 +26,7 @@ class MyPlayground {
     fun assignments() {
         val someBananas: Int = 0 //imediate
         val bananas = 0 //inferred
-        val bananasInit: Int
+        val bananasInit: Int // Type Required when no initializer is provided
     }
 
 
